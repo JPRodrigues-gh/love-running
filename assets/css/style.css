@@ -24,3 +24,20 @@ h1, h2 {
     float: left;
     font-size: 280%;
 }
+
+/* Navigation Links */
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+ul {
+    float: right;
+}
+
+#menu li {
+    float: left;
+    list-style-type: none;
+    margin-right: 30px;
+}
