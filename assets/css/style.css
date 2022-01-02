@@ -23,6 +23,7 @@ h1, h2 {
 #logo {
     float: left;
     font-size: 280%;
+    margin-left: 30px;
 }
 
 /* Navigation Links */
@@ -60,6 +61,8 @@ ul {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* hero image */
 
 /* removes the overflow, of the background image of the hero section, from the header */
 #hero-outer {
@@ -113,4 +116,31 @@ ul {
     to {
         transform: scale(1.1);
     }
+}
+
+/* club ethos */
+#club-ethos {
+    height: 600px;
+    width: 100%;
+}
+
+#left-about {
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+    background-color: cyan;
+}
+
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+    background-color: lightblue;
+}
+
+#center-about {
+    padding-top: 30px;
+    width: 66%;
+    margin: 0 auto;
+    background-color: lime;
 }
