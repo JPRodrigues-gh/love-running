@@ -31,6 +31,10 @@ h1, h2 {
     font-size: 110%;
     letter-spacing: 4px;
 }
+/* horizontally align logo and menu */
+#menu, #logo {
+    line-height: 75px;
+}
 
 ul {
     float: right;
@@ -40,4 +44,46 @@ ul {
     float: left;
     list-style-type: none;
     margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Underline the link as you hover over with the mouse */
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* underline the menu option for the current active page */
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* removes the overflow, of the background image of the hero section, from the header */
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url(../images/hero-image.webp) no-repeat center center;
+    /* animates zoom effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* creates the level of zoom for hero image */
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
 }
