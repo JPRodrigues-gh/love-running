@@ -229,7 +229,7 @@ footer {
 }
 
 .social-networks {
-    width: 100%;
+    width: 100%;   /* added this because center align wasn't working. Icons remained right justified. */
     text-align: center;
 }
 
@@ -242,4 +242,17 @@ footer {
     margin: 1%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+/* Gallery */
+
+#photos {
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
+}
+
+#photos > img {
+    width: 100%;
 }
